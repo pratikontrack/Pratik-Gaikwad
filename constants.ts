@@ -3,17 +3,14 @@ import {
   Database, 
   Mail, 
   Phone, 
-  BarChart3, 
   Layers, 
-  Cpu, 
-  Target 
 } from 'lucide-react';
 import { ServiceModule, ProcessStep, PricingTier, CaseStudy } from './types';
 
 export const SERVICE_MODULES: ServiceModule[] = [
   {
     id: 'arch',
-    title: 'Funnel Architecture & Build',
+    title: 'Funnel Architecture',
     description: 'Engineering the customer journey from first impression to transaction.',
     icon: Layers,
     deliverables: ['High-Conversion VSL Pages', 'Booking Flow Logic', 'Frictionless Payment Gateways'],
@@ -124,25 +121,35 @@ export const CASE_STUDIES: CaseStudy[] = [
     chartData: [
       { month: 'Jan', value: 12 },
       { month: 'Feb', value: 18 },
-      { month: 'Mar', value: 15 }, // System implemented
+      { month: 'Mar', value: 15 },
       { month: 'Apr', value: 35 },
       { month: 'May', value: 42 },
       { month: 'Jun', value: 58 },
+    ],
+    stats: [
+        { label: 'Total Revenue', value: '₹12.5L', trend: '+15%', trendUp: true },
+        { label: 'Qualified Leads', value: '142', trend: '+40%', trendUp: true },
+        { label: 'CPL', value: '₹450', trend: '-12%', trendUp: true } // Lower CPL is "Up" in performance
     ]
   },
   {
     id: 'cs2',
     clientType: 'Fitness Mentor',
     metric: 'Lead Quality',
-    value: '90% Qualified',
+    value: '90% Qual.',
     description: 'Implemented strict application logic. Calendar went from full of no-shows to high-ticket closers.',
     chartData: [
       { month: 'Jan', value: 20 },
-      { month: 'Feb', value: 25 }, // System implemented
+      { month: 'Feb', value: 25 },
       { month: 'Mar', value: 65 },
       { month: 'Apr', value: 78 },
       { month: 'May', value: 85 },
       { month: 'Jun', value: 92 },
+    ],
+    stats: [
+        { label: 'Show Rate', value: '92%', trend: '+35%', trendUp: true },
+        { label: 'High Ticket Sales', value: '18', trend: '+8', trendUp: true },
+        { label: 'Admin Hours', value: '4hrs', trend: '-15hrs', trendUp: true }
     ]
   }
 ];

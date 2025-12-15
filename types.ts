@@ -32,4 +32,5 @@ export interface CaseStudy {
   value: string;
   description: string;
   chartData: { month: string; value: number }[];
+  stats: { label: string; value: string; trend: string; trendUp: boolean }[];
 }
