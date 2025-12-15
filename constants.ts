@@ -80,34 +80,21 @@ export const PRICING_TIERS: PricingTier[] = [
       'Basic Email Automation',
       '30-Day Support Window'
     ],
-    cta: 'View System Specs',
+    cta: '1:1 strategic call',
     highlighted: false
   },
   {
-    name: 'Growth Partner',
-    priceRange: '₹40,000 / month',
-    description: 'Ongoing optimization and management of your revenue system.',
-    features: [
-      'Includes Core Architecture Build',
-      'Weekly Split Testing',
-      'Deep-Dive Analytics Reporting',
-      'Quarterly Strategy Pivots'
-    ],
-    cta: 'Apply for Partnership',
-    highlighted: true
-  },
-  {
-    name: 'Enterprise Custom',
+    name: 'Performance Partnership',
     priceRange: 'Application Only',
-    description: 'Complex ecosystems for high-volume personal brands.',
+    description: 'We invest our engineering resources to build and manage your system. Compensation is strictly tied to the revenue we generate together.',
     features: [
-      'Multi-Product Funnels',
-      'Sales Team Integration',
-      'Custom Dashboard Development',
-      'Priority Access'
+      'Zero Upfront Implementation Cost',
+      'Full-Service System Management',
+      'Revenue-Share Compensation',
+      'Strict Qualification Criteria'
     ],
-    cta: 'Contact Founder',
-    highlighted: false
+    cta: 'Apply for 1:1 Strategy Call',
+    highlighted: true
   }
 ];
 

@@ -51,7 +51,7 @@ const App: React.FC = () => {
                   onClick={() => setIsApplyModalOpen(true)}
                   className="bg-white text-black px-4 py-2 rounded-md text-sm font-semibold hover:bg-zinc-200 transition-colors shadow-[0_0_15px_rgba(255,255,255,0.1)]"
                 >
-                  Apply for Audit
+                  1:1 strategic call
                 </button>
             </div>
 
@@ -77,7 +77,7 @@ const App: React.FC = () => {
                 }}
                 className="w-full text-left block px-3 py-2 rounded-md text-base font-medium text-blue-400 hover:bg-zinc-800"
               >
-                Apply Now
+                1:1 strategic call
               </button>
             </div>
           </div>
@@ -106,11 +106,29 @@ const App: React.FC = () => {
                onClick={() => setIsApplyModalOpen(true)}
                className="bg-white text-black px-8 py-3.5 rounded-lg font-bold hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2"
             >
-              View System Architecture <ChevronRight size={16} />
+              1:1 strategic call <ChevronRight size={16} />
             </button>
             <a href="#proof" className="px-8 py-3.5 rounded-lg font-medium text-zinc-400 hover:text-white border border-zinc-800 hover:border-zinc-600 bg-zinc-900/50 hover:bg-zinc-900 transition-all">
               See Case Studies
             </a>
+          </div>
+
+          <div className="mt-12 pt-8 border-t border-zinc-900/50 flex flex-col items-center animate-in fade-in slide-in-from-bottom-2 duration-1000 delay-200">
+              <span className="text-[10px] font-mono text-zinc-600 uppercase tracking-widest mb-4">System Not Compatible With</span>
+              <ul className="flex flex-col md:flex-row items-center gap-3 md:gap-8 text-sm text-zinc-500">
+                 <li className="flex items-center gap-2">
+                    <div className="w-1 h-1 rounded-full bg-zinc-700"></div>
+                    Beginners without an existing offer
+                 </li>
+                 <li className="flex items-center gap-2">
+                    <div className="w-1 h-1 rounded-full bg-zinc-700"></div>
+                    Creators chasing viral spikes
+                 </li>
+                 <li className="flex items-center gap-2">
+                    <div className="w-1 h-1 rounded-full bg-zinc-700"></div>
+                    Businesses unwilling to track revenue metrics
+                 </li>
+              </ul>
           </div>
         </div>
 
@@ -181,7 +199,8 @@ const App: React.FC = () => {
       <section id="proof" className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
             <div className="max-w-2xl">
-                <h2 className="text-3xl font-bold text-white mb-3">System Performance</h2>
+                <h2 className="text-3xl font-bold text-white mb-2">System Performance</h2>
+                <p className="text-zinc-500 text-xs mb-4 italic">Dashboards shown are anonymized system snapshots for demonstration purposes.</p>
                 <p className="text-zinc-400 text-lg">
                     Real data from active client dashboards. <br/>
                     <span className="text-sm text-zinc-500">We track revenue, not views.</span>
@@ -284,7 +303,7 @@ const App: React.FC = () => {
             </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {PRICING_TIERS.map((tier) => (
                 <div 
                     key={tier.name} 
