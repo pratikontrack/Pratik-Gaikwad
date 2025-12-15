@@ -22,6 +22,10 @@ const App: React.FC = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const handleBooking = () => {
+    window.open('https://calendly.com/pratikgaikwada260/30min', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-background text-zinc-300 font-sans selection:bg-blue-500/30">
       
@@ -48,10 +52,10 @@ const App: React.FC = () => {
                     <Lock size={12} /> Client Login
                 </a>
                 <button 
-                  onClick={() => setIsApplyModalOpen(true)}
+                  onClick={handleBooking}
                   className="bg-white text-black px-4 py-2 rounded-md text-sm font-semibold hover:bg-zinc-200 transition-colors shadow-[0_0_15px_rgba(255,255,255,0.1)]"
                 >
-                  1:1 strategic call
+                  Book 1:1 Strategy Call
                 </button>
             </div>
 
@@ -72,12 +76,12 @@ const App: React.FC = () => {
               <a href="#proof" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-zinc-300 hover:text-white hover:bg-zinc-800">Proof</a>
               <button 
                 onClick={() => {
-                    setIsApplyModalOpen(true);
+                    handleBooking();
                     setIsMenuOpen(false);
                 }}
                 className="w-full text-left block px-3 py-2 rounded-md text-base font-medium text-blue-400 hover:bg-zinc-800"
               >
-                1:1 strategic call
+                Book 1:1 Strategy Call
               </button>
             </div>
           </div>
@@ -103,10 +107,10 @@ const App: React.FC = () => {
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button 
-               onClick={() => setIsApplyModalOpen(true)}
+               onClick={handleBooking}
                className="bg-white text-black px-8 py-3.5 rounded-lg font-bold hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2"
             >
-              1:1 strategic call <ChevronRight size={16} />
+              Book 1:1 Strategy Call <ChevronRight size={16} />
             </button>
             <a href="#proof" className="px-8 py-3.5 rounded-lg font-medium text-zinc-400 hover:text-white border border-zinc-800 hover:border-zinc-600 bg-zinc-900/50 hover:bg-zinc-900 transition-all">
               See Case Studies
@@ -303,7 +307,7 @@ const App: React.FC = () => {
             </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {PRICING_TIERS.map((tier) => (
                 <div 
                     key={tier.name} 
@@ -338,7 +342,7 @@ const App: React.FC = () => {
                     </div>
 
                     <button 
-                        onClick={() => setIsApplyModalOpen(true)}
+                        onClick={handleBooking}
                         className={`w-full py-4 rounded-lg text-sm font-bold transition-all ${
                             tier.highlighted
                             ? 'bg-white text-black hover:bg-zinc-200 shadow-lg'

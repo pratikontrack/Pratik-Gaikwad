@@ -73,10 +73,10 @@ const ApplyModal: React.FC<ApplyModalProps> = ({ isOpen, onClose }) => {
                     <div>
                       <label className="block text-sm font-medium text-zinc-400 mb-1">Current Monthly Revenue</label>
                       <select className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500">
-                        <option>Less than ₹1L/mo</option>
-                        <option>₹1L - ₹5L/mo</option>
-                        <option>₹5L - ₹15L/mo</option>
-                        <option>₹15L+/mo</option>
+                        <option>Less than $1k/mo</option>
+                        <option>$1k - $5k/mo</option>
+                        <option>$5k - $20k/mo</option>
+                        <option>$20k+/mo</option>
                       </select>
                     </div>
                     <div>

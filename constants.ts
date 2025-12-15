@@ -71,30 +71,43 @@ export const PROCESS_STEPS: ProcessStep[] = [
 
 export const PRICING_TIERS: PricingTier[] = [
   {
-    name: 'Core Architecture',
-    priceRange: '₹80,000 – ₹1,50,000',
-    description: 'One-time build for creators ready to professionalize their intake.',
+    name: 'System Architecture & Build',
+    priceRange: '$1,000 – $3,000 (one-time)',
+    description: 'Complete funnel engineering, automation setup, and technical infrastructure build.',
     features: [
       'Full Funnel Strategy & Design',
       'Technical Implementation',
-      'Basic Email Automation',
-      '30-Day Support Window'
+      'CRM & Email Automation Setup',
+      '30-Day Launch Support'
     ],
-    cta: '1:1 strategic call',
+    cta: 'Book 1:1 Strategy Call',
     highlighted: false
   },
   {
     name: 'Performance Partnership',
-    priceRange: 'Application Only',
-    description: 'We invest our engineering resources to build and manage your system. Compensation is strictly tied to the revenue we generate together.',
+    priceRange: 'Revenue Share · Application Only',
+    description: 'A selective, outcome-aligned partnership where we invest resources in exchange for upside.',
     features: [
       'Zero Upfront Implementation Cost',
       'Full-Service System Management',
-      'Revenue-Share Compensation',
-      'Strict Qualification Criteria'
+      'Strict Qualification Criteria',
+      'Direct Access to Engineering Team'
     ],
-    cta: 'Apply for 1:1 Strategy Call',
+    cta: 'Book 1:1 Strategy Call',
     highlighted: true
+  },
+  {
+    name: 'Growth Operator Retainer',
+    priceRange: '$500 – $1,000 / month',
+    description: 'Ongoing optimization, execution, and management of your revenue system.',
+    features: [
+      'Monthly Funnel Optimization',
+      'Weekly Strategy & Reporting',
+      'A/B Testing & Iteration',
+      'Priority Technical Support'
+    ],
+    cta: 'Book 1:1 Strategy Call',
+    highlighted: false
   }
 ];
 
@@ -114,9 +127,9 @@ export const CASE_STUDIES: CaseStudy[] = [
       { month: 'Jun', value: 58 },
     ],
     stats: [
-        { label: 'Total Revenue', value: '₹12.5L', trend: '+15%', trendUp: true },
+        { label: 'Total Revenue', value: '$16.5k', trend: '+15%', trendUp: true },
         { label: 'Qualified Leads', value: '142', trend: '+40%', trendUp: true },
-        { label: 'CPL', value: '₹450', trend: '-12%', trendUp: true } // Lower CPL is "Up" in performance
+        { label: 'CPL', value: '$6.00', trend: '-12%', trendUp: true } // Lower CPL is "Up" in performance
     ]
   },
   {
